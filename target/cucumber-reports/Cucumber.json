@@ -1,0 +1,166 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 30763769444,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Customer place an order by purchasing an item from search",
+        "description": "",
+        "id": "automated-end2end-tests;customer-place-an-order-by-purchasing-an-item-from-search;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 556566804,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 2108521412,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.AfterSteps()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6367119029,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on Home Page",
+            "match": {
+              "location": "HomePageSteps.user_is_on_Home_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1199498925,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "he search for \"dress\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "dress",
+                  "offset": 15
+                }
+              ],
+              "location": "HomePageSteps.he_search_for(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 20334099847,
+              "error_message": "java.lang.IndexOutOfBoundsException: Index: 0, Size: 0\r\n\tat java.util.ArrayList.rangeCheck(Unknown Source)\r\n\tat java.util.ArrayList.get(Unknown Source)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)\r\n\tat com.sun.proxy.$Proxy20.get(Unknown Source)\r\n\tat pageObjects.ProductListingPage.getProductName(ProductListingPage.java:37)\r\n\tat stepDefinitions.ProductPageSteps.choose_to_buy_the_first_item(ProductPageSteps.java:20)\r\n\tat ✽.And choose to buy the first item(End2End_Tests.feature:7)\r\n",
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "choose to buy the first item",
+            "match": {
+              "location": "ProductPageSteps.choose_to_buy_the_first_item()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "moves to checkout from mini cart",
+            "match": {
+              "location": "CartPageSteps.moves_to_checkout_from_mini_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "enter \"Lakshay\" personal details on checkout page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Lakshay",
+                  "offset": 7
+                }
+              ],
+              "location": "CheckoutPageSteps.enter_personal_details_on_checkout_page(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "select same delivery address",
+            "match": {
+              "location": "CheckoutPageSteps.select_same_delivery_address()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "select payment method as \"check\" payment",
+            "match": {
+              "arguments": [
+                {
+                  "val": "check",
+                  "offset": 26
+                }
+              ],
+              "location": "CheckoutPageSteps.select_payment_method_as_payment(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "place the order",
+            "match": {
+              "location": "CheckoutPageSteps.place_the_order()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Automated End2End Tests",
+    "description": "Description: The purpose of this feature is to test End 2 End integration.",
+    "id": "automated-end2end-tests",
+    "keyword": "Feature",
+    "uri": "End2End_Tests.feature"
+  }
+]
